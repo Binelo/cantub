@@ -1,0 +1,85 @@
+.cozinha {
+  padding: 50px 10px;
+}
+.cozinha-grid > a {
+  color: #f5ebdc;
+  box-shadow: 0px 0px 0px 30px #fbaa1b inset;
+  background-color: #f5ebdc;
+  max-width: fit-content;
+  padding: 5px 28px;
+  padding-top: 8px;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.cozinha-grid > a h6 {
+  transition: 0.2s;
+  position: relative;
+  right: 10px;
+}
+.cozinha-grid > a:hover h6 {
+  right: 0px;
+}
+.cozinha-grid > a img {
+  opacity: 0;
+  position: relative;
+  bottom: 2px;
+  transition: 0.3s;
+  max-width: 25px;
+}
+.cozinha-grid > a:hover img {
+  opacity: 1;
+}
+.cozinha-grid > a:hover {
+  box-shadow: 0px 0px 0px 2px #ed5007 inset;
+  border-radius: 0px 30px 30px 0px;
+  color: #ed5007;
+}
+
+.cozinha {
+  background: url(/img/fundo-cozinha.svg) no-repeat top center;
+  background-size: cover;
+}
+
+.cozinha-grid {
+  display: grid;
+  justify-items: center;
+  gap: 30px;
+}
+.cozinha-title {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  gap: 10px;
+  color: #6b3116;
+  font-family: Arlette;
+  font-size: 2.25rem;
+  line-height: 1.2em;
+  font-weight: 700;
+}
+.cozinha-grid > p {
+  color: #6b3116;
+  text-align: center;
+  font-size: 1.25rem;
+  max-width: 800px;
+}
+
+.cozinha video {
+  width: 600px;
+  box-shadow: 0px 8px 0px #6b3116;
+}
+
+@media only screen and (max-width:360px) {
+
+  .cozinha-title {
+    gap: 10px;
+    font-size: 1.7rem;
+  }
+  .cozinha-grid > p {
+    font-size: 1rem;
+  }
+  
+}

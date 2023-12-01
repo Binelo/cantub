@@ -1,0 +1,45 @@
+/*Nav*/
+[data-tab="content"] > div {
+  display: none;
+}
+[data-tab="content"] > div.ativo {
+  display: flex !important;
+}
+[data-tab="content"] > div.ativo {
+    animation: show-right 1s;
+    backface-visibility: hidden;
+}
+
+.press div svg {
+    filter: saturate(1)!important;
+}
+.press h2 {
+    color: #ED5007!important;
+}
+.press span {
+    opacity: 1!important;
+}
+
+.pressed {
+    filter: saturate(1)!important;
+}
+
+.pressed h2 {
+    opacity: 1!important;
+}
+
+.pression span {
+    opacity: 1!important;
+}
+.pression {
+    color: #ED5007!important;
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

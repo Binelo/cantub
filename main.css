@@ -1,0 +1,42 @@
+.main {
+    background: url(/img/fundo-main.webp) no-repeat center center;
+    background-size: cover;
+    padding: 120px 10px;
+}
+
+.main-content {
+    max-width: 600px;
+    display: grid;
+    gap: 25px;
+}
+
+.main-grid h1 {
+    color: #6B3116;
+    font-family: Arlette;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.2em;
+}
+
+.main-grid h2 {
+    color: rgba(107, 49, 22, 0.50);
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width:530px) {
+
+    .main-grid h1 {
+        font-size: 2rem;
+    }
+    
+    .main-grid h2 {
+        font-size: 1.2rem;
+    }
+
+    .main {
+        background: url(/img/fundo-main.png) no-repeat center center;
+        background-size: cover;
+        padding: 60px 10px;
+    }
+    
+}

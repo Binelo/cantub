@@ -1,0 +1,101 @@
+.header {
+    background-color: #F5EBDC;
+    padding: 10px 10px;
+    box-shadow: 0px 10px 20px #00000030;
+    width: 100%;
+    z-index: 5;
+}
+.top-menu {
+    background-color: #000;
+    color: #FFB001;
+    text-align: center;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.top-menu-grid h4 span {
+    color: #F5EBDC;
+}
+.header-grid {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    grid-gap: 20px;
+    justify-items: end;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo img {
+    margin-left: 10px;
+    max-width: 200px;
+}
+
+.nav-menu {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    grid-gap: 90px;
+}
+
+.nav-menu a, .nav-menu button {
+    color: #6B3116;
+    font-family: Arlette;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    max-width: fit-content;
+    position: relative;
+}
+.nav-menu a span, .nav-menu button span {
+    background: url(/img/cobrinha.svg) repeat-x center center;
+    height: 7px;
+    display: block;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: .3s;
+}
+.nav-menu a:hover span, .nav-menu button:hover span  {
+    opacity: 1;
+}
+.nav-menu a:hover, .nav-menu button:hover {
+    color: #ED5007;
+}
+
+@media only screen and (max-width: 530px) {
+
+    .top-menu {
+        font-size: 1rem;
+    }
+    
+}
+
+@media only screen and (min-width:857px) and (max-width:970px) {
+    .nav-menu {
+        grid-gap: 15px;
+    }
+    
+} 
+@media only screen and (min-width:291px) and (max-width:856px) {
+    .nav-menu {
+        grid-gap: 15px;
+    }
+    .nav-menu div:last-child {
+        margin-left: 0px;
+    }
+} 
+
+@media only screen and (max-width:290px) {
+    .header-grid {
+        display: grid;
+        grid-template-columns: 1fr .2fr;
+    }
+    .logo {
+        margin-right: auto;
+    }
+    .nav-menu div:last-child {
+        margin-left: 0px;
+    }
+}

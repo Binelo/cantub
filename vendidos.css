@@ -1,0 +1,53 @@
+.vendidos {
+  background: url(/img/main-queijo.svg) no-repeat center top;
+  padding-top: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.vendidos-grid {
+  display: flex;
+  align-items: baseline;
+  gap: 80px;
+  justify-content: center;
+}
+.vendidos-title {
+  color: #6b3116;
+  font-family: Arlette;
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2em;
+  margin-bottom: 50px;
+}
+.vendidos-grid > a {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+}
+/* .vendidos-grid > a div {
+  margin-left: 65px;
+} */
+
+.vendidos-grid > a:hover .btn-a h6 {
+  right: 0px;
+}
+
+.vendidos-grid > a:hover .btn-a img {
+  opacity: 1;
+}
+.vendidos-grid > a:hover .btn-a {
+  box-shadow: 0px 0px 0px 2px #ED5007 inset;
+  border-radius: 0px 30px 30px 0px;
+  color: #ED5007;
+}
+
+
+@media only screen and (max-width:640px) {
+
+  .vendidos-grid {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+  }
+  
+}

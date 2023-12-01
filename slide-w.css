@@ -1,0 +1,134 @@
+.depoimentos {
+  background-color: #6b3116;
+  color: #f5ebdc;
+  position: relative;
+  padding: 20px 0px;
+}
+.slide-wrapper {
+  overflow: hidden;
+}
+.depoimento-title {
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  font-family: "stolzl", sans-serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 200;
+  letter-spacing: 5px;
+}
+.slide {
+  display: flex;
+}
+#fundo-slide {
+  position: absolute;
+  z-index: -1;
+  top: -120px;
+}
+.slide:hover {
+  will-change: transform;
+}
+
+.slide li {
+  flex-shrink: 0;
+  width: 90vw;
+  max-width: 740px;
+  margin: 0 20px;
+  border-radius: 4px;
+  opacity: 0.8;
+  transform: scale(0.8);
+  margin-top: 20px;
+  transition: 0.4s;
+  opacity: 1;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.slide li h6 {
+  font-size: 1.5rem;
+}
+.slide li p {
+  font-size: 1.25rem;
+}
+
+.slide-content {
+  background: rgba(217, 217, 217, 0.05);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(217, 217, 217, 0.15);
+  padding: 30px;
+  font-size: 2rem;
+  max-width: 410px;
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[data-control="slide"] li a {
+  display: block;
+}
+
+.custom-controls {
+  display: none;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.prev {
+  left: 50px;
+}
+
+.next {
+  right: 50px;
+}
+
+.slide-paragraph {
+  background: rgba(217, 217, 217, 0.15);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  padding: 60px 10px;
+}
+
+@media only screen and (min-width: 370px) and (max-width: 500px) {
+  .slide li p {
+    font-size: 1rem;
+  }
+  .prev {
+    left: 20px;
+  }
+
+  .next {
+    right: 20px;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 369px) {
+  .slide li p {
+    font-size: 1rem;
+  }
+  .prev {
+    left: 20px;
+  }
+
+  .next {
+    right: 20px;
+  }
+
+  .prev,
+  .next {
+    display: none;
+  }
+}

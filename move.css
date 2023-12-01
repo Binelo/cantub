@@ -1,0 +1,11 @@
+.moving {
+    background: url(/img/melhorhamb.png) repeat-x center center;
+    height: 95px;
+    box-shadow: 2px 0px 2px #F5EBDC inset, -2px 0px 2px #F5EBDC inset;
+}
+.tampa {
+    box-shadow: 0px 0px 0px 1px #6B3116;
+}
+.rs {
+    background: url(/img/sigaredes.png) repeat-x center center;
+}

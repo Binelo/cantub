@@ -1,0 +1,99 @@
+.option {
+    margin-top: 100px;
+}
+.option-grid button h2 {
+    max-width: fit-content;
+    border-radius: 30px;
+    background-color: #FBAA1B;
+    color: #F5EBDC;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 5px 25px;
+    padding-top: 8px;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+.option-grid button h2:hover {
+    background-color: #ED5007;
+}
+.option-grid {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+}
+.option-grid button {
+    width: 540px;
+    height: 286px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option-grid button:nth-child(1) {
+    background: url(/img/burgers.webp) no-repeat center center;
+    background-size: cover;
+    border-radius: 20px 0px 0px 0px;
+}
+.option-grid button:nth-child(2) {
+    background: url(/img/combos.webp) no-repeat center center;
+    background-size: cover;
+    border-radius: 0px 20px 0px 0px;
+}
+.option-grid button:nth-child(3) {
+    background: url(/img/porcoes.webp) no-repeat center center;
+    background-size: cover;
+    border-radius: 0px 0px 0px 20px;
+}
+.option-grid button:nth-child(4) {
+    background: url(/img/combinados.webp) no-repeat center center;
+    background-size: cover;
+    border-radius: 0px 0px 20px 0px;
+}
+.option-grid button:not(:hover) {
+    filter: saturate(0);
+}
+.option-grid button:not(:hover) h2 {
+    opacity: 0;
+}
+
+@media only screen and (max-width:1120px) {
+
+    .option-grid {
+        display: grid;
+        grid-template-columns: max-content;
+        justify-content: center;
+    }
+
+    .option-grid button {
+        width: 93vw;
+    }
+
+    .option-grid button:nth-child(1) {
+        background: url(/img/burgers.webp) no-repeat center center;
+        background-size: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .option-grid button:nth-child(2) {
+        background: url(/img/combos.webp) no-repeat center center;
+        background-size: cover;
+        border-radius: 0px 0px 0px 0px;
+    }
+    .option-grid button:nth-child(3) {
+        background: url(/img/porcoes.webp) no-repeat center center;
+        background-size: cover;
+        border-radius: 0px 0px 0px 0px;
+    }
+    .option-grid button:nth-child(4) {
+        background: url(/img/combinados.webp) no-repeat center center;
+        background-size: cover;
+        border-radius: 0px 0px 20px 20px;
+    }
+    .option-grid button:not(:hover) {
+        filter: saturate(1);
+    }
+    .option-grid button:not(:hover) h2 {
+        opacity: 1;
+    }
+    
+}

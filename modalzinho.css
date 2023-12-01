@@ -1,0 +1,146 @@
+.modalzinho {
+    background: url(/img/fundo-modal.png) no-repeat center center;
+    background-size: cover;
+    width: 735px;
+    position: relative;
+    display: none;
+    cursor: auto;
+    transition: display 0.3s ease;
+    position: fixed;
+    bottom: 50vh;
+    right: 50vw;
+    z-index: 200;
+    border-radius: 15px;
+    transform: translate(51%, 50%);
+    box-shadow: 0px 5px 5px #FFF;
+    transition: .3s;
+}
+.detalhes {
+    background-color: #FBAA1B;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    padding: 20px;
+    color: rgba(107, 49, 22, 0.50);
+    font-weight: 700;
+}
+.modalzinho > button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: rgba(107, 49, 22, 0.50);
+    font-weight: 700;
+    font-size: 2rem;
+}
+.modalzinho > button:hover {
+    color: #ED5007;
+}
+.m-info  h2 {
+    color: #6B3116;
+    font-family: Arlette;
+    line-height: 1.2em;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.m-info > p {
+    color: #6B3116;
+    font-weight: 700;
+}
+.m-info h5 {
+    color: #ED5007;
+    font-size: 2.25rem;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 5px;
+}
+.m-info h5 sup {
+    font-size: 1rem;
+    color: rgba(107, 49, 22, 0.50);
+    position: absolute;
+    top: -12px;
+}
+.m-info h5 s {
+    color: rgb(197, 171, 159);
+    font-size: 1.4rem;
+    line-height: 1em;
+    flex: 1;
+    max-width: fit-content;
+    min-width: fit-content;
+}
+.m-info {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+.m-info > button {
+    transition: .3s;
+}
+.anchor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.on .modalzinho {
+    animation: sai .3s ease-in-out;
+}
+@keyframes sai {
+
+    0% {
+        opacity: 0;
+        transform: translate(51%, 0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(51%, 50%);
+    }
+    
+}
+
+@media only screen and (min-width:465px) and (max-width:770px) {
+
+    .modalzinho {
+        width: 435px;
+        bottom: 50vh;
+        right: 50vw;
+        z-index: 200;
+        transform: translate(51.5%, 50%);
+    }
+    
+}
+
+@media only screen and (min-width:370px) and (max-width:464px) {
+
+    .modalzinho {
+        width: 335px;
+        bottom: 50vh;
+        right: 50vw;
+        z-index: 200;
+        transform: translate(51.5%, 50%);
+    }
+    .m-info  h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (min-width:0px) and (max-width:369px) {
+
+    .modalzinho {
+        width: 245px;
+        bottom: 50vh;
+        right: 50vw;
+        z-index: 200;
+        transform: translate(54%, 50%);
+    }
+    .m-info  h2 {
+        font-size: 1.1rem;
+    }
+    .redirection-button {
+        font-size: 1.1rem;
+    }
+    .m-info > p {
+        font-size: .9rem;
+    }
+}
